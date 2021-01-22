@@ -1,10 +1,12 @@
 import './App.css';
-import LoginForm from "./components/session/login"
+import LoginFormHook from "./components/session_hook/login";
+import LoginFormClass from "./components/session_class/login";
 
 function App() {
   return (
     <div className="App">
-      <LoginForm />
+      {/* <LoginFormHook /> */}
+      <LoginFormClass />
     </div>
   );
 }

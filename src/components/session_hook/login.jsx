@@ -3,7 +3,7 @@ import "./login.css"
 // import { connect } from 'react-redux';
 // import { login } from "../actions/session_actions";
 
-const LoginForm = ({ login }) => {
+const LoginFormHook = ({ login }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -65,7 +65,7 @@ const LoginForm = ({ login }) => {
   )
 }
 
-export default LoginForm;
+export default LoginFormHook;
 
 // const mapDispatchToProps = dispatch => ({
 //   login: payload => dispatch(login(payload))
