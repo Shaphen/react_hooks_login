@@ -1,0 +1,31 @@
+.session-header-container {
+  display: flex;
+  font-size: 25px;
+  border-bottom: 2px solid lightgray;
+}
+
+.session-header {
+  margin-left: 20px;
+  color: gray;
+  cursor: default;
+}
+
+.session-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-title {
+  color: gray;
+  font-size: 30px;
+  margin-top: 80px;
+  cursor: default;
+}
+
+#session-input {
+  padding: 10px;
+  width: 300px;
+  margin: 10px;
+  font-size: 15px;
+}

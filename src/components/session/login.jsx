@@ -17,6 +17,16 @@ const LoginForm = ({ login }) => {
 
   const handleSubmit = () => login({ username: username, password: password })
 
+  // for inline styles this is a conventional way to do it. Add it add it to whatever
+  // element you want to apply the css to as: style={ buttonStyle }
+  const buttonStyle = {
+    padding: '10px',
+    width: '324px',
+    margin: '10px',
+    fontSize: '15px',
+    cursor: 'pointer'
+  };
+
   return (
     <div className="session-container">
       <div className="session-header-container">
@@ -31,7 +41,7 @@ const LoginForm = ({ login }) => {
         </p>
 
         <input
-          className="session-input"
+          id="session-input"
           type="text"
           name="username"
           placeholder="Username"
@@ -39,7 +49,7 @@ const LoginForm = ({ login }) => {
           onChange={ e => setUsername(e.target.value) }
         />
         <input
-          className="session-input"
+          id="session-input"
           type="text"
           name="password"
           placeholder="Password"
@@ -48,7 +58,7 @@ const LoginForm = ({ login }) => {
         />
 
         <div className="submit-clumn">
-          <button className="login-button" onClick={ handleSubmit }>Login</button>
+          <button style={ buttonStyle } onClick={ handleSubmit }>LOGIN</button>
         </div>
       </form>
     </div>
