@@ -1,13 +1,16 @@
 import './App.css';
 import LoginFormHook from "./components/session_hook/login";
 import LoginFormClass from "./components/session_class/login";
+import { Provider } from 'react-redux';
 
-function App() {
+const App = ({ store }) => {
   return (
-    <div className="App">
-      {/* <LoginFormHook /> */}
-      <LoginFormClass />
-    </div>
+    // <Provider store={store}>
+      <div className="App">
+        {/* <LoginFormHook /> */}
+        <LoginFormClass />
+      </div>
+    // </Provider>
   );
 }
 

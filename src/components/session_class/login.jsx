@@ -1,5 +1,6 @@
 import React from 'react';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
+import { login } from '../../actions/session_actions';
 
 class LoginFormClass extends React.Component {
   constructor(props){
@@ -91,6 +92,6 @@ class LoginFormClass extends React.Component {
 //   login: user => dispatch(login(user))
 // });
 
-// export default connect(null, nDTP)(LoginFormClass);
+// export default connect(null, mDTP)(LoginFormClass);
 
 export default LoginFormClass;
