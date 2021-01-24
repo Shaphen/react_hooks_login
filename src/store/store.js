@@ -5,5 +5,9 @@ import sessionReducer from '../reducers/session_reducer';
 const middleware = [thunk];
 
 export const configureStore = (preloadedState={}) => (
-  createStore(preloadedState, sessionReducer, applyMiddleware(...middleware))
+  createStore(
+    sessionReducer, 
+    preloadedState, 
+    applyMiddleware(...middleware)
+  )
 )

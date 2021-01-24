@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./login.css"
-// import { connect } from 'react-redux';
-// import { login } from "../actions/session_actions";
+import { connect } from 'react-redux';
+import { login } from "../../actions/session_actions";
 
 const LoginFormHook = ({ login }) => {
   const [username, setUsername] = useState('');
@@ -65,10 +65,10 @@ const LoginFormHook = ({ login }) => {
   )
 }
 
-export default LoginFormHook;
+// export default LoginFormHook;
 
-// const mapDispatchToProps = dispatch => ({
-//   login: payload => dispatch(login(payload))
-// });
+const mapDispatchToProps = dispatch => ({
+  login: payload => dispatch(login(payload))
+});
 
-// export default connect(null, mapDispatchToProps)(LoginForm);
+export default connect(null, mapDispatchToProps)(LoginFormHook);
